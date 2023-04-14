@@ -1,0 +1,35 @@
+Terraform Tests for gcp-mlops:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
+
+Terraform Deployment for gcp-mlops:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
+
+ML Code Tests for gcp-mlops:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
+
+Lint CI/CD workflow files:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
+
+Staging Model Deployment for gcp-mlops:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
+
+Prod Model Deployment for gcp-mlops:
+  mlops-runner:
+    pod-runner:
+      image: ubuntu-2004
+      replica: 1
