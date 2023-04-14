@@ -23,7 +23,7 @@ env:
   DATABRICKS_TOKEN: ${{ secrets.PROD_WORKSPACE_TOKEN }}
 jobs:
   prod:
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     environment: prod
     steps:
       - name: Checkout repo

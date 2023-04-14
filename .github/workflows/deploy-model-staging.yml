@@ -23,7 +23,7 @@ env:
   DATABRICKS_TOKEN: ${{ secrets.STAGING_WORKSPACE_TOKEN }}
 jobs:
   staging:
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     environment: staging
     steps:
       - name: Checkout repo

@@ -17,7 +17,7 @@ defaults:
 jobs:
   staging:
     concurrency: gcp-mlops-staging-terraform-job
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     env:
       DATABRICKS_HOST: https://6837671528024691.1.gcp.databricks.com
       
@@ -82,7 +82,7 @@ jobs:
   prod:
     concurrency: gcp-mlops-prod-terraform-job
     needs: staging
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     env:
       DATABRICKS_HOST: https://6837671528024691.1.gcp.databricks.com
       

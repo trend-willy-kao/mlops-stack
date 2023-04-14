@@ -12,7 +12,7 @@ env:
   DATABRICKS_TOKEN: ${{secrets.STAGING_WORKSPACE_TOKEN}}  
 jobs:
   unit_tests:
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -28,7 +28,7 @@ jobs:
   
   integration_test:
     needs: unit_tests
-    runs-on: [mlops-runner]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
