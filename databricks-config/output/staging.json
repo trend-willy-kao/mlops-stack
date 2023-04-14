@@ -1,0 +1,27 @@
+{
+  "gcp-mlops_batch_inference_job_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "139674884394206"
+  },
+  "gcp-mlops_experiment_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "2558543737588096"
+  },
+  "gcp-mlops_experiment_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "/gcp-mlops/staging-gcp-mlops-experiment"
+  },
+  "gcp-mlops_model_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "staging-gcp-mlops-model"
+  },
+  "gcp-mlops_training_job_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "450734876551526"
+  }
+}
