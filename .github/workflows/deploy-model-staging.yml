@@ -32,5 +32,5 @@ jobs:
         env:
           MLFLOW_TRACKING_URI: databricks
         run: |
-          pip install mlflow
+          pip install --user mlflow
           python steps/deploy.py "${{ github.event.inputs.modelUri }}" "staging"
