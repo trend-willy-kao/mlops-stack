@@ -40,6 +40,7 @@ resource "databricks_job" "batch_inference_job" {
   schedule {
     quartz_cron_expression = "0 0 11 * * ?" # daily at 11am
     timezone_id            = "UTC"
+    pause_status           = "PAUSED"
   }
 
   # If you want to turn on notifications for this job, please uncomment the below code,
